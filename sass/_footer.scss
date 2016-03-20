@@ -1,0 +1,18 @@
+/* FOOTER */
+
+.insta-footer {
+  height: 15vh;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  @include desktop {
+    justify-content:flex-start;
+  }
+}
+
+.insta-copyright p {
+	color: #c2c2c2;
+	font-size: .9rem;
+}

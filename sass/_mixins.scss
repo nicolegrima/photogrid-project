@@ -1,0 +1,31 @@
+/* VARIABLES */
+
+$mobile-width: 480px;
+$tablet-width: 600px;
+$desktop-width: 1000px;
+
+/* BREAK POINTS - MIXINS */
+
+/* 480px */
+
+@mixin mobile {
+  @media screen and (min-width: $mobile-width) {
+    @content;
+  }
+}
+
+/* 600px */
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+/* 1000px */
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}

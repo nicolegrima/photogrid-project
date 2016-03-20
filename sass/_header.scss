@@ -1,0 +1,109 @@
+/* HEADER */
+
+.insta-header {
+    background-color: black;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 1.5em;
+
+    @include tablet {
+    flex-wrap:nowrap;
+      }
+
+     @include desktop {
+       justify-content:flex-start;
+       align-items: center;
+     }
+}
+
+.populated-header {
+	height: auto;
+  background-color: black;
+	transition: 1s ease-in-out;
+}
+
+/* LOGO */
+
+.insta-logo {
+  display:flex;
+}
+
+.insta-logo img {
+  max-width: 300px;
+
+
+  @include tablet {
+    max-width:250px;
+    margin: 0 1rem;
+    }
+
+  @include desktop {
+    max-width: 300px;
+    }
+}
+
+/* SEARCH FIELD */
+
+.search-form {
+  max-width: 300px;
+  display:flex;
+  padding-bottom: .2rem;
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    max-width:250px;
+    margin: 0 1rem;
+   }
+}
+
+.search-form-contents {
+  max-width: 300px;
+  border-bottom: 2px solid #ffffff;
+
+  @include tablet {
+    max-width:250px;
+    display:inline-flex;
+    border-bottom: 2px solid #ffffff;
+   }
+
+   @include desktop {
+     border-bottom: 2px solid #ffffff;
+     }
+
+   input {
+     color: #ffffff;
+     background-color: #000;
+     border:none;
+     font-family:'Open Sans';
+     font-size: 1.1rem;
+   }
+}
+
+.search-form-contents::before {
+  content: "#";
+  color: #ffffff;
+  background-color: #000;
+  font-size: 1.4rem;
+  padding-right: 0.5rem;
+}
+
+.search-form-contents span {
+  color: #ffffff;
+  background-color: #000;
+  font-size: 1.1rem;
+  padding-left: 1.75rem;
+
+  &:hover {
+    color: #e2231a;
+  }
+}
+
+.search-button {
+  background-color: #000;
+  border:none;
+}
